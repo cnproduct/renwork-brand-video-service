@@ -1,0 +1,74 @@
+{
+  "channels": {
+    "linkedin": {
+      "name": "LinkedIn Company / Personal Post",
+      "recommended_char_limit": 3000,
+      "hook_line_limit": 2,
+      "optimal_aspect_ratio": "1.91:1",
+      "optimal_resolution": "1200x628",
+      "tone": "Professional B2B Thought Leadership",
+      "hashtag_count": "3-5"
+    },
+    "facebook": {
+      "name": "Facebook Page Post",
+      "recommended_char_limit": 500,
+      "hook_line_limit": 2,
+      "optimal_aspect_ratio": "1:1",
+      "optimal_resolution": "1080x1080",
+      "tone": "Community & Case Demonstration",
+      "hashtag_count": "2-4"
+    },
+    "instagram": {
+      "name": "Instagram Feed / Carousel",
+      "recommended_char_limit": 400,
+      "hook_line_limit": 1,
+      "optimal_aspect_ratio": "4:5",
+      "optimal_resolution": "1080x1350",
+      "tone": "Visual Aesthetic & Architectural Polish",
+      "hashtag_count": "15-20"
+    },
+    "tiktok": {
+      "name": "TikTok Video & Caption",
+      "recommended_char_limit": 150,
+      "hook_time_sec": 3,
+      "optimal_aspect_ratio": "9:16",
+      "optimal_resolution": "1080x1920",
+      "tone": "Fast-paced Curiosity & Shock Proof",
+      "hashtag_count": "4-6"
+    },
+    "youtube_shorts": {
+      "name": "YouTube Shorts",
+      "recommended_char_limit": 100,
+      "hook_time_sec": 3,
+      "optimal_aspect_ratio": "9:16",
+      "optimal_resolution": "1080x1920",
+      "tone": "Problem-Demo-Result Fact Proof",
+      "hashtag_count": "3-5"
+    },
+    "xiaohongshu": {
+      "name": "小红书图文/短视频",
+      "recommended_char_limit": 800,
+      "hook_line_limit": 1,
+      "optimal_aspect_ratio": "3:4",
+      "optimal_resolution": "1080x1440",
+      "tone": "真诚种草、避坑干货、细节实拍",
+      "hashtag_count": "5-8"
+    },
+    "wechat_video": {
+      "name": "微信视频号",
+      "recommended_char_limit": 100,
+      "optimal_aspect_ratio": "9:16",
+      "optimal_resolution": "1080x1920",
+      "tone": "企业实力、车间管理、创始人真实IP",
+      "hashtag_count": "2-4"
+    },
+    "blog_seo": {
+      "name": "Official Website Technical Blog & GEO/SEO",
+      "recommended_word_count": "1200-2000 words",
+      "structure": "H1 title, H2 pillars, H3 subpoints, FAQ schema",
+      "optimal_aspect_ratio": "16:9",
+      "optimal_resolution": "1920x1080",
+      "tone": "Authoritative Procurement Encyclopedia"
+    }
+  }
+}

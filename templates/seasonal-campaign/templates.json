@@ -1,0 +1,62 @@
+{
+  "category": "seasonal_campaign",
+  "name": "节点营销与国际展会类模板库",
+  "templates": [
+    {
+      "id": "season_tradeshow_preview",
+      "name": "国际展会开展前预热与邀约",
+      "focus": "广交会/美国IBS/迪拜BIG5等展位号公布、专属礼品预约、提前锁定会谈时间",
+      "hook_structure": "Visiting {trade_show_name} this year? Book a VIP private meeting at Booth {booth_no}!",
+      "recommended_channels": ["linkedin", "facebook", "blog_seo"]
+    },
+    {
+      "id": "season_tradeshow_live",
+      "name": "展会现场火爆实况直击",
+      "focus": "展台人流如织、现场签约实况、热门样品质感展示",
+      "hook_structure": "Live from {trade_show_name} Day {day_num}: Global buyers exploring our new collection...",
+      "recommended_channels": ["linkedin", "facebook", "instagram", "tiktok"]
+    },
+    {
+      "id": "season_tradeshow_recap",
+      "name": "展会圆满收官与成果复盘",
+      "focus": "展后感谢信、重点发布样品数字化画册回寄通道、首发订单锁定",
+      "hook_structure": "Thank you for visiting us at {trade_show_name}! Missed the show? Download our digital catalog...",
+      "recommended_channels": ["linkedin", "facebook"]
+    },
+    {
+      "id": "season_newyear_holiday",
+      "name": "跨年与重要节日节庆关怀",
+      "focus": "新年/圣诞/开斋节客户祝福、感恩长期合作伙伴、节日排产提示",
+      "hook_structure": "Warmest season greetings from our team to your global family!",
+      "recommended_channels": ["linkedin", "facebook", "instagram"]
+    },
+    {
+      "id": "season_procurement_peak",
+      "name": "旺季采购与集装箱排期预警",
+      "focus": "提醒客户提前锁定期货舱位、避开节假日停工、确保按期交货",
+      "hook_structure": "Peak season alert: Lock in your Q3 container slots before our production calendar fills up...",
+      "recommended_channels": ["linkedin", "facebook"]
+    },
+    {
+      "id": "season_new_season_preview",
+      "name": "年度新设计季与色彩趋势首发",
+      "focus": "2026 建筑/流行色系、新系列样品预售",
+      "hook_structure": "Sneak peek: The new colors and finishes defining architecture in 2026...",
+      "recommended_channels": ["instagram", "linkedin", "xiaohongshu"]
+    },
+    {
+      "id": "season_client_case_story",
+      "name": "里程碑客户工程案例深度特写",
+      "focus": "某海外大型工程顺利竣工、买家高度赞誉、全景实景大片",
+      "hook_structure": "Case Study: How {client_name} transformed a luxury resort project with our custom stone panels...",
+      "recommended_channels": ["linkedin", "instagram", "blog_seo"]
+    },
+    {
+      "id": "season_annual_milestone",
+      "name": "企业年度成长与出海里程碑总结",
+      "focus": "年出货总量突破、全球服务企业数、感谢全球客户支持",
+      "hook_structure": "Celebrating our 2025 milestones: 450+ containers delivered to 42 countries with zero delays...",
+      "recommended_channels": ["linkedin", "wechat_video"]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "RenWorkContentItem",
+  "type": "object",
+  "required": [
+    "item_id",
+    "campaign_id",
+    "channel",
+    "template_type",
+    "language",
+    "headline",
+    "body_copy",
+    "cta",
+    "hashtags",
+    "visual_brief_ref"
+  ],
+  "properties": {
+    "item_id": { "type": "string" },
+    "campaign_id": { "type": "string" },
+    "channel": {
+      "type": "string",
+      "enum": ["linkedin", "facebook", "instagram", "tiktok", "youtube_shorts", "xiaohongshu", "wechat_video", "blog_seo"]
+    },
+    "template_type": { "type": "string" },
+    "language": { "type": "string", "pattern": "^[a-z]{2}(-[A-Z]{2})?$" },
+    "headline": { "type": "string" },
+    "hook": { "type": "string" },
+    "body_copy": { "type": "string" },
+    "key_benefits": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "cta": {
+      "type": "object",
+      "required": ["text", "destination_type"],
+      "properties": {
+        "text": { "type": "string" },
+        "destination_type": { "type": "string", "enum": ["dm", "website_rfq", "whatsapp", "catalog_download", "email"] },
+        "link": { "type": "string" }
+      }
+    },
+    "hashtags": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "visual_brief_ref": { "type": "string" },
+    "video_storyboard": {
+      "type": "object",
+      "properties": {
+        "duration_seconds": { "type": "integer" },
+        "aspect_ratio": { "type": "string", "enum": ["16:9", "9:16", "1:1", "4:5"] },
+        "scenes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["scene_number", "duration_sec", "visual_prompt", "narration_text"],
+            "properties": {
+              "scene_number": { "type": "integer" },
+              "duration_sec": { "type": "number" },
+              "visual_prompt": { "type": "string" },
+              "b_roll_description": { "type": "string" },
+              "narration_text": { "type": "string" },
+              "subtitle_overlay": { "type": "string" },
+              "camera_motion": { "type": "string" }
+            }
+          }
+        },
+        "background_music_mood": { "type": "string" }
+      }
+    },
+    "compliance_audit_ref": { "type": "string" },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "audited_pass", "needs_revision", "ready_for_export"]
+    }
+  }
+}

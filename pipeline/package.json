@@ -1,0 +1,24 @@
+{
+  "name": "renwork-pipeline",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "RenWork 外贸增长管线：抓取 → 清洗 → 线索库 → 开发信 → 多语言短视频",
+  "scripts": {
+    "crawl": "node src/agents/01-crawler.js",
+    "parse": "node src/agents/02-parser.js",
+    "store": "node src/agents/03-store.js",
+    "mail": "node src/agents/04-mailer.js",
+    "video": "node src/agents/05-video.js",
+    "pipeline": "node src/pipeline.js",
+    "pipeline:dry": "node src/pipeline.js --dry-run",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "nodemailer": "^6.9.16"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  }
+}

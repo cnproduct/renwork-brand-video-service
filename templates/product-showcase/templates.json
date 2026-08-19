@@ -1,0 +1,69 @@
+{
+  "category": "product_showcase",
+  "name": "产品推广与技术卖点类模板库",
+  "templates": [
+    {
+      "id": "prod_new_launch",
+      "name": "重磅新品首发发布",
+      "focus": "全新产品系列登场、突破性升级、抢先首批订货优惠",
+      "hook_structure": "Introducing the all-new {product_name}: Engineered to redefine {category} performance.",
+      "recommended_channels": ["linkedin", "instagram", "facebook", "youtube_shorts"]
+    },
+    {
+      "id": "prod_core_usp",
+      "name": "核心杀手级卖点深度拆解",
+      "focus": "为什么选择本产品的 3 个唯一理由、数据对比、实证数据",
+      "hook_structure": "3 reasons why top distributors are switching to our {product_name} this season...",
+      "recommended_channels": ["linkedin", "facebook", "blog_seo"]
+    },
+    {
+      "id": "prod_material_breakdown",
+      "name": "原材料与物理机理科普",
+      "focus": "材质成分解析、为什么优质原料决定使用寿命与耐用度",
+      "hook_structure": "Not all {material} is created equal: Here is the truth inside our engineering formula...",
+      "recommended_channels": ["instagram", "blog_seo", "youtube_shorts"]
+    },
+    {
+      "id": "prod_application_scenes",
+      "name": "全场景应用展示",
+      "focus": "高端住宅、商业空间、户外恶劣环境等多场景落地实景",
+      "hook_structure": "From extreme arctic cold to coastal humidity: How {product_name} performs in the real world.",
+      "recommended_channels": ["instagram", "facebook", "xiaohongshu"]
+    },
+    {
+      "id": "prod_direct_comparison",
+      "name": "新旧产品/行业竞品客观对比",
+      "focus": "施工速度对比、抗冲击对比、长期维护成本对比",
+      "hook_structure": "Side-by-side test: Traditional solution vs our high-efficiency {product_name}...",
+      "recommended_channels": ["youtube_shorts", "tiktok", "linkedin"]
+    },
+    {
+      "id": "prod_buyers_guide",
+      "name": "专业买家选型选购指南",
+      "focus": "教海外采购商如何避免踩坑、厚度/规格匹配法则",
+      "hook_structure": "The Ultimate 2026 Procurement Guide: How to choose the right {product_category} for your projects...",
+      "recommended_channels": ["blog_seo", "linkedin"]
+    },
+    {
+      "id": "prod_faq_series",
+      "name": "采购高频痛点 FAQ 解答",
+      "focus": "起订量、定制流程、海运防潮包装、安装工艺等核心疑问解答",
+      "hook_structure": "Top 5 questions international buyers ask us before placing a container order...",
+      "recommended_channels": ["linkedin", "facebook", "xiaohongshu"]
+    },
+    {
+      "id": "prod_packaging_customization",
+      "name": "出口级防震包装与定制彩盒",
+      "focus": "多层托盘木箱防震加固、条形码/外箱印刷、托盘装柜优化",
+      "hook_structure": "Zero transit damage: Inside our heavy-duty sea-freight packing protocol...",
+      "recommended_channels": ["tiktok", "facebook", "wechat_video"]
+    },
+    {
+      "id": "prod_live_demo",
+      "name": "极速安装/使用演示",
+      "focus": "无缝拼接演示、无需复杂工具、省工 40% 的真实实操",
+      "hook_structure": "Watch one contractor install {sqm} of {product_name} in under 15 minutes...",
+      "recommended_channels": ["tiktok", "youtube_shorts", "instagram"]
+    }
+  ]
+}

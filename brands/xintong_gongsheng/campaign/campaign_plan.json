@@ -1,0 +1,62 @@
+{
+  "campaign_id": "cmp_xintong_festival_2026",
+  "company_id": "xintong_gongsheng",
+  "campaign_name": "心同共生 · 首届一日文化节暨祭孔大典预热战役",
+  "theme": "定慧一体，隔离而协同 —— 启世人公心，化世界大同",
+  "timeframe": {
+    "start_date": "2026-08-24",
+    "end_date": "2026-09-28"
+  },
+  "primary_objective": "brand_awareness",
+  "target_markets": [
+    "公众与家庭",
+    "青少年",
+    "公益讲师与志愿者",
+    "企业与城市合作方"
+  ],
+  "featured_products": [
+    "prod_xintong_system_01",
+    "offering_course_gongxiu",
+    "offering_lecturer_cultivation",
+    "offering_enterprise_esg"
+  ],
+  "target_channels": ["xiaohongshu", "wechat_video", "blog_seo"],
+  "content_schedule": [
+    {
+      "week_number": 1,
+      "focus_theme": "破题认知：书院 × 共生 到底是什么关系",
+      "deliverable_ids": ["brand-film-remotion", "brand-film-vertical", "post-xintong-relationship"],
+      "primary_cta": "观看品牌片，理解「定慧一体，隔离而协同」"
+    },
+    {
+      "week_number": 2,
+      "focus_theme": "使命价值：启世人公心，化世界大同（四步路径）",
+      "deliverable_ids": ["post-four-step-path", "post-mission-vision", "brand-film-horizontal"],
+      "primary_cta": "分享「明白→做到→利他→共生」路径图"
+    },
+    {
+      "week_number": 3,
+      "focus_theme": "信任透明：六条隔离线 + 反哺机制",
+      "deliverable_ids": ["post-six-isolation-lines", "post-giveback-mechanism"],
+      "primary_cta": "阅读边界白皮书 / 关注披露"
+    },
+    {
+      "week_number": 4,
+      "focus_theme": "文化节倒计时：9.28 祭孔大典报名",
+      "deliverable_ids": ["post-festival-countdown", "brand-film-remotion", "cover-poster"],
+      "primary_cta": "报名首届一日文化节"
+    },
+    {
+      "week_number": 5,
+      "focus_theme": "文化节爆发：现场直播 + 收官",
+      "deliverable_ids": ["live-festival-coverage", "post-festival-recap"],
+      "primary_cta": "观看直播 / 预约下一场公益分享"
+    }
+  ],
+  "kpi_targets": {
+    "target_reach": 100000,
+    "target_inquiries": 500,
+    "target_conversions": 200,
+    "note": "目标值为规划值，实际以发布平台数据回传为准；不用于对外宣传已达成。"
+  }
+}

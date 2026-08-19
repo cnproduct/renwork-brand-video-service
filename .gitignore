@@ -1,0 +1,10 @@
+node_modules/
+out/
+data/
+.env
+*.mp4
+*.log
+.DS_Store
+__MACOSX/
+.venv/
+*.pyc

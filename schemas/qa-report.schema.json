@@ -1,0 +1,92 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "RenWorkQAReport",
+  "type": "object",
+  "required": [
+    "audit_id",
+    "item_ref",
+    "timestamp",
+    "scores",
+    "gates",
+    "claim_risk",
+    "publish_ready",
+    "required_fixes"
+  ],
+  "properties": {
+    "audit_id": { "type": "string" },
+    "item_ref": { "type": "string" },
+    "timestamp": { "type": "string", "format": "date-time" },
+    "scores": {
+      "type": "object",
+      "required": ["brand_score", "content_score", "visual_score", "channel_score", "overall_score"],
+      "properties": {
+        "brand_score": { "type": "number", "minimum": 0, "maximum": 100 },
+        "content_score": { "type": "number", "minimum": 0, "maximum": 100 },
+        "visual_score": { "type": "number", "minimum": 0, "maximum": 100 },
+        "channel_score": { "type": "number", "minimum": 0, "maximum": 100 },
+        "overall_score": { "type": "number", "minimum": 0, "maximum": 100 }
+      }
+    },
+    "gates": {
+      "type": "object",
+      "required": ["gate_1_fact_verification", "gate_2_brand_consistency", "gate_3_channel_specs", "gate_4_legal_compliance"],
+      "properties": {
+        "gate_1_fact_verification": {
+          "type": "object",
+          "required": ["passed", "unsupported_claims"],
+          "properties": {
+            "passed": { "type": "boolean" },
+            "unsupported_claims": { "type": "array", "items": { "type": "string" } },
+            "verified_claims_count": { "type": "integer" }
+          }
+        },
+        "gate_2_brand_consistency": {
+          "type": "object",
+          "required": ["passed", "tone_check", "color_accuracy"],
+          "properties": {
+            "passed": { "type": "boolean" },
+            "tone_check": { "type": "string", "enum": ["on_brand", "minor_deviation", "off_brand"] },
+            "color_accuracy": { "type": "boolean" }
+          }
+        },
+        "gate_3_channel_specs": {
+          "type": "object",
+          "required": ["passed", "aspect_ratio_match", "safe_zone_respected"],
+          "properties": {
+            "passed": { "type": "boolean" },
+            "aspect_ratio_match": { "type": "boolean" },
+            "safe_zone_respected": { "type": "boolean" },
+            "character_count_ok": { "type": "boolean" }
+          }
+        },
+        "gate_4_legal_compliance": {
+          "type": "object",
+          "required": ["passed", "restricted_words_detected"],
+          "properties": {
+            "passed": { "type": "boolean" },
+            "restricted_words_detected": { "type": "array", "items": { "type": "string" } },
+            "disclaimer_present": { "type": "boolean" }
+          }
+        }
+      }
+    },
+    "claim_risk": {
+      "type": "string",
+      "enum": ["none", "low", "medium", "high", "critical"]
+    },
+    "publish_ready": { "type": "boolean" },
+    "required_fixes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["severity", "category", "issue", "suggestion"],
+        "properties": {
+          "severity": { "type": "string", "enum": ["blocker", "warning", "info"] },
+          "category": { "type": "string" },
+          "issue": { "type": "string" },
+          "suggestion": { "type": "string" }
+        }
+      }
+    }
+  }
+}

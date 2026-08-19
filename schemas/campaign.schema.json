@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "RenWorkCampaign",
+  "type": "object",
+  "required": [
+    "campaign_id",
+    "company_id",
+    "campaign_name",
+    "timeframe",
+    "primary_objective",
+    "featured_products",
+    "target_channels",
+    "content_schedule"
+  ],
+  "properties": {
+    "campaign_id": { "type": "string" },
+    "company_id": { "type": "string" },
+    "campaign_name": { "type": "string" },
+    "theme": { "type": "string" },
+    "timeframe": {
+      "type": "object",
+      "required": ["start_date", "end_date"],
+      "properties": {
+        "start_date": { "type": "string", "format": "date" },
+        "end_date": { "type": "string", "format": "date" }
+      }
+    },
+    "primary_objective": {
+      "type": "string",
+      "enum": ["brand_awareness", "b2b_lead_generation", "product_launch", "trade_show_hype", "customer_retention"]
+    },
+    "target_markets": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "featured_products": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "target_channels": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["linkedin", "facebook", "instagram", "tiktok", "youtube_shorts", "xiaohongshu", "wechat_video", "blog_seo"]
+      }
+    },
+    "content_schedule": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["week_number", "focus_theme", "deliverable_ids"],
+        "properties": {
+          "week_number": { "type": "integer" },
+          "focus_theme": { "type": "string" },
+          "deliverable_ids": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "primary_cta": { "type": "string" }
+        }
+      }
+    },
+    "kpi_targets": {
+      "type": "object",
+      "properties": {
+        "target_inquiries": { "type": "integer" },
+        "target_reach": { "type": "integer" },
+        "target_conversions": { "type": "integer" }
+      }
+    }
+  }
+}

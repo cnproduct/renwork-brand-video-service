@@ -1,0 +1,83 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "RenWorkProductTruth",
+  "type": "object",
+  "required": [
+    "product_id",
+    "company_id",
+    "product_name",
+    "category",
+    "specifications",
+    "key_selling_points",
+    "verified_claims",
+    "prohibited_claims"
+  ],
+  "properties": {
+    "product_id": { "type": "string" },
+    "company_id": { "type": "string" },
+    "product_name": { "type": "string" },
+    "product_name_en": { "type": "string" },
+    "model_number": { "type": "string" },
+    "category": { "type": "string" },
+    "materials": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "specifications": {
+      "type": "object",
+      "additionalProperties": { "type": ["string", "number", "boolean"] }
+    },
+    "certifications": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "cert_number", "issuing_body"],
+        "properties": {
+          "name": { "type": "string" },
+          "cert_number": { "type": "string" },
+          "issuing_body": { "type": "string" },
+          "valid_until": { "type": "string" }
+        }
+      }
+    },
+    "key_selling_points": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "target_buyer_personas": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "commercial_terms": {
+      "type": "object",
+      "properties": {
+        "moq": { "type": "string" },
+        "lead_time": { "type": "string" },
+        "sample_policy": { "type": "string" },
+        "oem_odm_capability": { "type": "string" },
+        "customization_options": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "verified_claims": {
+      "type": "array",
+      "description": "Claims that are legally and technically verified and approved for marketing copy.",
+      "items": {
+        "type": "object",
+        "required": ["claim", "evidence_source"],
+        "properties": {
+          "claim": { "type": "string" },
+          "evidence_source": { "type": "string" },
+          "test_report_ref": { "type": "string" }
+        }
+      }
+    },
+    "prohibited_claims": {
+      "type": "array",
+      "description": "Exaggerated, unverified, or legally sensitive claims strictly forbidden in any output.",
+      "items": { "type": "string" }
+    }
+  }
+}

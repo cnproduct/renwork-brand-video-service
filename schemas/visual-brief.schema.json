@@ -1,0 +1,68 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "RenWorkVisualBrief",
+  "type": "object",
+  "required": [
+    "brief_id",
+    "campaign_id",
+    "channel",
+    "aspect_ratio",
+    "dimensions",
+    "color_distribution",
+    "logo_placement",
+    "image_generation_prompt"
+  ],
+  "properties": {
+    "brief_id": { "type": "string" },
+    "campaign_id": { "type": "string" },
+    "channel": { "type": "string" },
+    "aspect_ratio": { "type": "string", "enum": ["1:1", "16:9", "9:16", "4:5", "1.91:1"] },
+    "dimensions": {
+      "type": "object",
+      "required": ["width", "height"],
+      "properties": {
+        "width": { "type": "integer" },
+        "height": { "type": "integer" }
+      }
+    },
+    "color_distribution": {
+      "type": "object",
+      "required": ["dominant_color", "primary_brand_color_ratio"],
+      "properties": {
+        "dominant_color": { "type": "string" },
+        "primary_brand_color_ratio": { "type": "number", "minimum": 0.05, "maximum": 0.60 },
+        "accent_color": { "type": "string" }
+      }
+    },
+    "logo_placement": {
+      "type": "object",
+      "required": ["position", "padding_percent"],
+      "properties": {
+        "position": { "type": "string", "enum": ["top_left", "top_right", "bottom_left", "bottom_right", "center_header"] },
+        "padding_percent": { "type": "number", "minimum": 2, "maximum": 15 },
+        "logo_variant": { "type": "string", "enum": ["primary", "monochrome", "reversed"] }
+      }
+    },
+    "image_generation_prompt": {
+      "type": "object",
+      "required": ["positive_prompt", "negative_prompt", "style_preset"],
+      "properties": {
+        "positive_prompt": { "type": "string" },
+        "negative_prompt": { "type": "string" },
+        "style_preset": { "type": "string", "enum": ["photorealistic_industrial", "minimalist_studio", "modern_commercial", "3d_tech_render", "authentic_b2b_scene"] },
+        "lighting_spec": { "type": "string" },
+        "camera_lens": { "type": "string" }
+      }
+    },
+    "character_consistency_lock": {
+      "type": "object",
+      "properties": {
+        "enabled": { "type": "boolean" },
+        "reference_image_paths": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    }
+  }
+}

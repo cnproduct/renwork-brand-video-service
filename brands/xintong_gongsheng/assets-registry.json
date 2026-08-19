@@ -1,0 +1,87 @@
+{
+  "company_id": "xintong_gongsheng",
+  "generated_at": "2026-08-17",
+  "source_dir": "renwork-pipeline/out/videos/brand-film",
+  "assets": [
+    {
+      "deliverable_id": "brand-film-remotion",
+      "kind": "video",
+      "title": "心同共生 品牌片（Remotion 版·带配音字幕）",
+      "path": "renwork-pipeline/out/videos/brand-film/心同共生-品牌片-Remotion版-带配音.mp4",
+      "spec": "1080x1920 / 96s / h264+aac / 连贯旁白 + 底部逐段字幕 + BGM",
+      "channels": ["xiaohongshu", "wechat_video"]
+    },
+    {
+      "deliverable_id": "brand-film-vertical",
+      "kind": "video",
+      "title": "心同共生 品牌片（逐帧动画竖版）",
+      "path": "renwork-pipeline/out/videos/brand-film/心同共生-品牌片-竖版.mp4",
+      "spec": "1080x1920 / 93s / 逐帧动画 + 旁白 + xfade 转场 + BGM",
+      "channels": ["xiaohongshu", "wechat_video"]
+    },
+    {
+      "deliverable_id": "brand-film-horizontal",
+      "kind": "video",
+      "title": "心同共生 品牌片（横版）",
+      "path": "renwork-pipeline/out/videos/brand-film/心同共生-品牌片-横版.mp4",
+      "spec": "1920x1080 / 93s",
+      "channels": ["blog_seo"]
+    },
+    {
+      "deliverable_id": "brand-film-nosub",
+      "kind": "video",
+      "title": "心同共生 品牌片（Remotion 版·无配音底片）",
+      "path": "renwork-pipeline/out/videos/brand-film/心同共生-品牌片-Remotion版.mp4",
+      "spec": "1080x1920 / 96s / 仅画面，可二次剪辑",
+      "channels": ["archive"]
+    },
+    {
+      "deliverable_id": "cover-poster",
+      "kind": "image",
+      "title": "心同共生 封面海报",
+      "path": "renwork-pipeline/out/videos/brand-film/心同共生-封面海报.jpg",
+      "spec": "高清封面图",
+      "channels": ["xiaohongshu", "wechat_video", "blog_seo"]
+    },
+    {
+      "deliverable_id": "interactive-page",
+      "kind": "web",
+      "title": "心同共生 品牌片交互页（可点击章节 + 侧边详情）",
+      "path": "renwork-pipeline/out/videos/brand-film/interactive/index.html",
+      "spec": "本地 http://localhost:8787/interactive/index.html",
+      "channels": ["blog_seo"]
+    },
+    {
+      "deliverable_id": "xintong-real-scene-intro-horizontal",
+      "kind": "video",
+      "title": "心同共生介绍片（真实场景横版）",
+      "path": "renwork-pipeline/out/videos/xintong-intro/心同共生-真实场景介绍片-横版.mp4",
+      "spec": "1920x1080 / 179.87s / 13 个真实场景图 + 连贯旁白 + 字幕 + BGM",
+      "channels": ["blog_seo", "wechat_video"]
+    },
+    {
+      "deliverable_id": "xintong-real-scene-intro-preview",
+      "kind": "image",
+      "title": "真实场景介绍片 13 场预览",
+      "path": "renwork-pipeline/out/videos/xintong-intro/场景预览.jpg",
+      "spec": "13 场景联系图",
+      "channels": ["archive"]
+    },
+    {
+      "deliverable_id": "xintong-real-scene-intro-yunyang",
+      "kind": "video",
+      "title": "心同共生介绍片（云扬配音版）",
+      "path": "renwork-pipeline/out/videos/xintong-intro/心同共生-真实场景介绍片-横版-云扬配音.mp4",
+      "spec": "1920x1080 / 155.23s / zh-CN-YunyangNeural / rate +4% / pitch +0Hz",
+      "channels": ["blog_seo", "wechat_video"]
+    },
+    {
+      "deliverable_id": "xintong-real-scene-intro-yunyang-cover",
+      "kind": "video",
+      "title": "心同共生介绍片（云扬配音 + 开场封面版）",
+      "path": "renwork-pipeline/out/videos/xintong-intro/心同共生-真实场景介绍片-横版-云扬配音-带封面.mp4",
+      "spec": "1920x1080 / 159.27s / 4s 可见品牌封面 + zh-CN-YunyangNeural / rate +4% / pitch +0Hz",
+      "channels": ["blog_seo", "wechat_video"]
+    }
+  ]
+}

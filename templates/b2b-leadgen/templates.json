@@ -1,0 +1,62 @@
+{
+  "category": "b2b_leadgen",
+  "name": "B2B精准获客与询盘转化类模板库",
+  "templates": [
+    {
+      "id": "leadgen_buyer_painpoint",
+      "name": "海外买家核心痛点击穿",
+      "focus": "直击高破损率、交期延误、色差失控等采购痛点，提供解法",
+      "hook_structure": "Tired of unpredictable lead times and fragile packaging eating your margins?",
+      "recommended_channels": ["linkedin", "facebook", "blog_seo"]
+    },
+    {
+      "id": "leadgen_procurement_risk",
+      "name": "跨国采购风险规避指南",
+      "focus": "如何规避虚假代工厂、假劣证书、合同履约风险",
+      "hook_structure": "5 red flags to watch out for when sourcing {product_category} from overseas...",
+      "recommended_channels": ["linkedin", "blog_seo"]
+    },
+    {
+      "id": "leadgen_supply_chain_solution",
+      "name": "端到端供应链一站式方案",
+      "focus": "从原材料直供到海外门到门清关派送，全链条降本提效",
+      "hook_structure": "How we streamline direct factory-to-warehouse supply for regional wholesalers...",
+      "recommended_channels": ["linkedin", "facebook"]
+    },
+    {
+      "id": "leadgen_cost_efficiency",
+      "name": "全生命周期成本与利润核算",
+      "focus": "不仅是出厂单价，帮采购商核算人工安装费、运输破损节省总账",
+      "hook_structure": "Calculate your true landing cost: How faster installation saves $ per square foot...",
+      "recommended_channels": ["linkedin", "blog_seo"]
+    },
+    {
+      "id": "leadgen_compliance_peace_of_mind",
+      "name": "合规清关与无忧进口保障",
+      "focus": "符合欧美进口法案、原产地证书、环保合规文件齐全",
+      "hook_structure": "Zero customs delays: Complete documentation packages provided for every container...",
+      "recommended_channels": ["linkedin"]
+    },
+    {
+      "id": "leadgen_on_time_delivery",
+      "name": "准时交付履约率与排产承诺",
+      "focus": "自动化排产看板、99.2% 准时发货率、延期违约赔付机制",
+      "hook_structure": "How our 30-day production guarantee protects your project construction timeline...",
+      "recommended_channels": ["linkedin", "facebook"]
+    },
+    {
+      "id": "leadgen_industry_trends",
+      "name": "2026 全球行业趋势前瞻",
+      "focus": "最新材质流行趋势、海外买家偏好变化、先发选品红利",
+      "hook_structure": "2026 Global Sourcing Trends in {industry}: What top distributors are stocking now...",
+      "recommended_channels": ["linkedin", "blog_seo", "instagram"]
+    },
+    {
+      "id": "leadgen_direct_rfq_call",
+      "name": "限时样品申领与快速报价 (RFQ)",
+      "focus": "直通专属客服、免费定制样品盒寄送、2小时快速核价",
+      "hook_structure": "Planning your next container order? Request your free sample kit today!",
+      "recommended_channels": ["linkedin", "facebook", "instagram", "tiktok"]
+    }
+  ]
+}

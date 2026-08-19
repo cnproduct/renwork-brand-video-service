@@ -1,0 +1,21 @@
+{
+  "name": "renwork-brand-video-service",
+  "version": "1.0.0",
+  "description": "心同共生品牌视觉系统与视频生成统一服务（skills + plugin + MCP + pipeline）",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "generate": "node pipeline/src/agents/09-xintong-intro.js",
+    "cover": "node pipeline/src/agents/10-add-cover.js",
+    "film": "node pipeline/src/agents/07-brand-film.js"
+  },
+  "dependencies": {
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@opencode-ai/plugin": "latest"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  }
+}

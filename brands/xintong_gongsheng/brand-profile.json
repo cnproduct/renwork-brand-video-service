@@ -1,0 +1,84 @@
+{
+  "profile_id": "bp_xintong_gongsheng_2026",
+  "company_id": "xintong_gongsheng",
+  "version": "1.0.0",
+  "brand_name": "心同共生",
+  "brand_name_en": "Xintong Gongsheng (Heart-Together Symbiosis)",
+  "tagline": "启世人公心 · 化世界大同",
+  "tagline_en": "Awaken the common heart, realize a harmonious world",
+  "industry": "culture_and_social_enterprise",
+  "dual_entity": {
+    "academy_name": "心同书院",
+    "academy_legal": "公益主体 / 非营利",
+    "academy_duty": "守文化、守公益、育人才、建公信（定：安住本心）",
+    "gongsheng_legal": "商业主体 / 社会企业",
+    "gongsheng_duty": "连资源、做产品、建平台、强造血（慧：生起妙用）",
+    "relationship": "定慧一体，隔离而协同——法律独立、财务隔离、治理协同、公开透明"
+  },
+  "target_markets": [
+    "公众与家庭",
+    "青少年",
+    "公益志愿者",
+    "公益讲师",
+    "企业与合作机构",
+    "城市伙伴",
+    "消费者"
+  ],
+  "colors": {
+    "primary": "#A0261C",
+    "primary_light": "#C05038",
+    "primary_dark": "#6E1A14",
+    "secondary": "#E0B060",
+    "accent": "#E0B060",
+    "bg_dark": "#1A0C09",
+    "bg_light": "#F5EDE2",
+    "card_dark": "#2A1210",
+    "text_primary": "#FFFBF5",
+    "text_secondary": "#C9A98A",
+    "contrast_notes": "赭金(#E0B060) 配朱红(#A0261C) 对比度 3.78:1，仅用于大字号标题/装饰线；正文在朱红底上须用米白(#FFFBF5)。其余关键组合均达 WCAG AA/AAA。"
+  },
+  "typography": {
+    "font_sans": "'PingFang SC', 'Hiragino Sans GB', 'Heiti SC', sans-serif",
+    "font_display": "'Songti SC', 'STSong', 'STHeiti', serif",
+    "font_mono": "'PingFang SC', monospace"
+  },
+  "logos": {
+    "safe_zone_ratio": 0.2,
+    "note": "Logo 以「心」字朱红印章圆环 + 赭金线条构成；源矢量文件待品牌方提供后补充 primary_svg / monochrome_svg / reversed_svg。"
+  },
+  "voice_tone": {
+    "primary_archetype": "公心文化守护者 × 社会企业共建者",
+    "tone_keywords": ["温暖", "克制", "公心", "笃行", "可信", "共生", "去个人化"],
+    "prohibited_expressions": [
+      "收费晋级",
+      "卖导师身份",
+      "课内推销",
+      "加盟费",
+      "借公益名义强制成交",
+      "混用公益数据",
+      "虚假反哺承诺",
+      "获取书院名单销售",
+      "以赞助金额出售仪式位置",
+      "神化创始人/导师",
+      "未获证的绝对化用语（最/第一/唯一/绝对）"
+    ],
+    "preferred_terms": {
+      "书院与共生的关系": "定慧一体，隔离而协同；各自独立，彼此成就",
+      "共同使命": "启世人公心，化世界大同",
+      "成长路径": "明白 → 做到 → 利他 → 共生（四步不可跳跃）"
+    }
+  },
+  "compliance_profile": {
+    "mandatory_disclaimers": [
+      "心同书院为公益主体/非营利；心同共生为社会企业。两者法律独立、财务隔离、治理协同。",
+      "不购买、不捐赠、不加入公司，不影响任何人继续参加书院公益学习。"
+    ],
+    "trademark_notice": "© 心同共生 · 心同书院",
+    "restricted_claims": [
+      "严禁宣称书院是共生获客渠道，或共生是书院的商业部门",
+      "严禁在公益场景出现报价、成交、拉客户等商业行为",
+      "严禁未经审计宣称反哺金额或经营数据",
+      "严禁虚构未举办的公益场次、未获得的认证"
+    ]
+  }
+}

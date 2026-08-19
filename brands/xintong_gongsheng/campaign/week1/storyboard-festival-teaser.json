@@ -1,0 +1,49 @@
+{
+  "storyboard_id": "sb_festival_teaser_15s",
+  "campaign_id": "cmp_xintong_festival_2026",
+  "title": "心同共生 · 首届文化节预热短片（15 秒）",
+  "purpose": "为 2026.9.28 首届一日文化节暨祭孔大典预热，制造悬念、传递使命、驱动报名。",
+  "duration_seconds": 15,
+  "aspect_ratio": "9:16",
+  "fps": 30,
+  "background_music_mood": "古琴 + 庄重编钟渐入，克制静谧（东方仪式感，非喧嚣）",
+  "brand_consistency": "朱红 #A0261C 主底、赭金 #E0B060 强调、米白 #FFFBF5 正文、宋体标题/黑体副题；Logo 印章圆环安全区 20%。",
+  "scenes": [
+    {
+      "scene_number": 1,
+      "duration_sec": 3.0,
+      "visual_prompt": "墨黑渐入，米白宋体大字居中浮现「2026年9月28日，会发生什么？」，一束赭金细光扫过",
+      "b_roll_description": "纯文字悬念卡，无实拍",
+      "narration_text": "二零二六年九月二十八日，会发生什么？",
+      "subtitle_overlay": "2026.9.28",
+      "camera_motion": "Slow push-in to text, golden light sweep"
+    },
+    {
+      "scene_number": 2,
+      "duration_sec": 4.0,
+      "visual_prompt": "朱红渐变底，庄重祭孔大典意象（杏坛、古乐、焚香）剪影与「首届一日文化节 · 祭孔大典」宋体大字叠印",
+      "b_roll_description": "祭孔大典氛围实拍 / 品牌片横版截取",
+      "narration_text": "首届一日文化节，暨祭孔大典。",
+      "subtitle_overlay": "首届一日文化节 · 祭孔大典",
+      "camera_motion": "Slow dolly-in on ritual silhouette"
+    },
+    {
+      "scene_number": 3,
+      "duration_sec": 4.0,
+      "visual_prompt": "两枚朱红印章圆环并排浮现（心同书院 / 心同共生），下方赭金大字「启世人公心，化世界大同」",
+      "b_roll_description": "双主体印章动画 + 使命字幕",
+      "narration_text": "启世人公心，化世界大同。",
+      "subtitle_overlay": "启世人公心 · 化世界大同",
+      "camera_motion": "Two seals scale in, then title slides up"
+    },
+    {
+      "scene_number": 4,
+      "duration_sec": 4.0,
+      "visual_prompt": "米白宣纸底，朱红大按钮「预约报名」，下方一行小字「心同书院 × 心同共生」落款 + 日期",
+      "b_roll_description": "封面海报底图 + CTA 按钮",
+      "narration_text": "九月二十八日，与你共赴一场公心之约。",
+      "subtitle_overlay": "9.28 预约报名",
+      "camera_motion": "Static hero lock-off, soft zoom onto CTA button"
+    }
+  ]
+}

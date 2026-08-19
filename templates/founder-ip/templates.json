@@ -1,0 +1,55 @@
+{
+  "category": "founder_ip",
+  "name": "创始人IP与企业领袖观点类模板库",
+  "templates": [
+    {
+      "id": "founder_industry_vision",
+      "name": "创始人行业观察与战略研判",
+      "focus": "中国智造升级、外贸出海新趋势、供应链如何走向高质量发展",
+      "hook_structure": "Why low-price price wars are ending in manufacturing: A founder's perspective...",
+      "recommended_channels": ["linkedin", "wechat_video"]
+    },
+    {
+      "id": "founder_entrepreneur_story",
+      "name": "20年创业初心与工匠心路",
+      "focus": "从第一台切石机/第一条缝纫线讲起、坚守品质的故事",
+      "hook_structure": "20 years ago, we started with just one CNC cutter. Today, we supply global skylines...",
+      "recommended_channels": ["linkedin", "wechat_video", "xiaohongshu"]
+    },
+    {
+      "id": "founder_factory_management",
+      "name": "车间管理与精益制造哲学",
+      "focus": "如何让 200 位工人把误差控制在 0.5 毫米内、质量奖惩制度",
+      "hook_structure": "Inside our shop floor: The 3 management rules that eliminated defective shipments...",
+      "recommended_channels": ["linkedin", "wechat_video"]
+    },
+    {
+      "id": "founder_product_philosophy",
+      "name": "产品研发理念与打磨细节",
+      "focus": "为一个无缝锁扣结构反复修改 18 版图纸的执着",
+      "hook_structure": "Why we rejected 18 mold prototypes before launching this interlocking panel...",
+      "recommended_channels": ["linkedin", "instagram", "xiaohongshu"]
+    },
+    {
+      "id": "founder_answering_buyers",
+      "name": "创始人亲答海外大买家尖锐问题",
+      "focus": "面对关税波动、原材料涨价，工厂如何保障买家利润",
+      "hook_structure": "An international buyer asked me: How will you protect our prices if raw material surges?",
+      "recommended_channels": ["linkedin", "wechat_video"]
+    },
+    {
+      "id": "founder_behind_scenes",
+      "name": "凌晨发货与车间深夜幕后花絮",
+      "focus": "为了赶上客户紧急船期，全厂通力协作的真诚动人实录",
+      "hook_structure": "Midnight at our container yard: Ensuring our European client's urgent deadline is met...",
+      "recommended_channels": ["wechat_video", "tiktok", "instagram"]
+    },
+    {
+      "id": "founder_global_partnership",
+      "name": "致全球战略合作伙伴的一封信",
+      "focus": "重申长期主义、互利共赢、与客户共同穿越经济周期",
+      "hook_structure": "To our long-term global distributors: Why true partnership goes beyond purchase orders...",
+      "recommended_channels": ["linkedin", "blog_seo"]
+    }
+  ]
+}

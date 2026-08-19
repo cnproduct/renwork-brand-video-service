@@ -1,0 +1,70 @@
+{
+  "category": "enterprise_trust",
+  "name": "企业信任与供应链实力类模板库",
+  "templates": [
+    {
+      "id": "trust_factory_scale",
+      "name": "现代化工厂与规模实力",
+      "focus": "生产占地、车间数控设备、自动化产线、单月峰值产能",
+      "hook_structure": "How a {sqm} sqm automated facility guarantees your container shipments...",
+      "key_angles": ["智能数控设备展示", "精益生产管理", "年出口集装箱数量"],
+      "recommended_channels": ["linkedin", "wechat_video", "facebook"]
+    },
+    {
+      "id": "trust_production_workflow",
+      "name": "全流程精益生产解密",
+      "focus": "从原料采掘/采购、初加工、精密切割到组装包装全工序",
+      "hook_structure": "Step-by-step: From raw {material} to international standard export package in {days} days.",
+      "key_angles": ["工序透明化", "工匠工艺与数控融合", "环保低碳制造"],
+      "recommended_channels": ["youtube_shorts", "tiktok", "instagram"]
+    },
+    {
+      "id": "trust_quality_control",
+      "name": "严苛质检与实验室测试",
+      "focus": "自建实验室、高低温/拉力/耐磨破坏性测试、出厂抽检率 100%",
+      "hook_structure": "Why zero defect rate is non-negotiable in our ISO9001 quality lab...",
+      "key_angles": ["破坏性测试镜头", "高精度游标卡尺/色差仪", "出厂检验报告"],
+      "recommended_channels": ["linkedin", "youtube_shorts", "blog_seo"]
+    },
+    {
+      "id": "trust_certifications",
+      "name": "权威国际资质与第三方背书",
+      "focus": "CE, FDA, ISO, BSCI, OEKO-TEX 等国际权威认证",
+      "hook_structure": "Certified to global standards: What our latest {cert_name} audit means for buyers...",
+      "key_angles": ["认证证书展示", "第三方机构(SGS/TUV)检测流程", "全球通关无忧"],
+      "recommended_channels": ["linkedin", "facebook", "blog_seo"]
+    },
+    {
+      "id": "trust_engineering_team",
+      "name": "资深工程师与研发团队",
+      "focus": "20+ 年行业专家、模具设计团队、专属技术支持服务",
+      "hook_structure": "Meet the engineering minds behind our custom OEM/ODM solutions...",
+      "key_angles": ["工程师工作实录", "图纸到成品快速打样", "技术答疑"],
+      "recommended_channels": ["linkedin", "wechat_video"]
+    },
+    {
+      "id": "trust_customer_service",
+      "name": "24h响应与全球售后保障",
+      "focus": "专属外贸跟单、实时物流追踪、货损先行赔付承诺",
+      "hook_structure": "From order confirmation to your warehouse dock: How we ensure zero shipping anxiety...",
+      "key_angles": ["即时响应体系", "集装箱装柜图文汇报", "售后质保条例"],
+      "recommended_channels": ["facebook", "linkedin"]
+    },
+    {
+      "id": "trust_oem_odm_capability",
+      "name": "深度 OEM / ODM 定制能力",
+      "focus": "支持来图来样开模、品牌私标定制、定制包装彩盒",
+      "hook_structure": "Building private label success: Custom molding and packaging for top global brands...",
+      "key_angles": ["3天极速出样", "严守商业机密NDA", "一站式私标打造"],
+      "recommended_channels": ["linkedin", "instagram", "facebook"]
+    },
+    {
+      "id": "trust_rd_innovation",
+      "name": "专利技术与研发突破",
+      "focus": "自主发明专利、新型环保材料替代、结构轻量化设计",
+      "hook_structure": "The breakthrough technology that reduced material weight by {percent}% without sacrificing strength...",
+      "key_angles": ["新专利技术解析", "节能降本优势", "引领行业趋势"],
+      "recommended_channels": ["linkedin", "blog_seo"]
+    }
+  ]
+}

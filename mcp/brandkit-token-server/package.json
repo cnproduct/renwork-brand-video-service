@@ -1,0 +1,14 @@
+{
+  "name": "@brandvision/token-server",
+  "version": "1.0.0",
+  "description": "Fast Model Context Protocol (MCP) server for Brand Design Tokens, WCAG Contrast Auditing, and Theme CSS Generation",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.5.0"
+  },
+  "license": "MIT"
+}

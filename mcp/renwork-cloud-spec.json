@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "name": "renwork-brand-core-cloud",
+  "version": "3.0.0",
+  "description": "RenWork Cloud Core API & Protected Strategy MCP Endpoint Specification. Protects core intelligence, prompt compilers, industry heuristics, and factual verification databases from client-side reverse engineering.",
+  "endpoint": "https://api.rrenn.com/v1/brand-engine/mcp",
+  "protected_tools": [
+    {
+      "name": "compile_brand_profile",
+      "description": "Compiles raw enterprise assets into a unified BrandProfile using proprietary industry taxonomy.",
+      "access": "Cloud Protected"
+    },
+    {
+      "name": "build_product_truth",
+      "description": "Extracts verified technical claims from datasheets and cross-references lab test databases.",
+      "access": "Cloud Protected"
+    },
+    {
+      "name": "build_campaign_strategy",
+      "description": "Generates 4-week multi-channel content calendar based on trade cycles and buyer intent data.",
+      "access": "Cloud Protected"
+    },
+    {
+      "name": "generate_channel_content",
+      "description": "Generates native channel-optimized B2B copy with engineered hooks and CTAs.",
+      "access": "Cloud Protected"
+    },
+    {
+      "name": "generate_visual_brief",
+      "description": "Constructs photorealistic AI image generation prompts with strict material and color ratios.",
+      "access": "Cloud Protected"
+    },
+    {
+      "name": "generate_video_shotlist",
+      "description": "Builds 6s/15s/30s scene-by-scene video storyboards, narration audio timings, and Remotion configs.",
+      "access": "Cloud Protected"
+    },
+    {
+      "name": "localize_for_market",
+      "description": "Deep cultural, linguistic, unit-system, and legal adaptation for North America, Europe, Middle East, SEA, and East Asia.",
+      "access": "Cloud Protected"
+    },
+    {
+      "name": "audit_product_claims",
+      "description": "Strict factual audit verifying claims against registered laboratory evidence.",
+      "access": "Cloud Protected"
+    },
+    {
+      "name": "audit_brand_consistency",
+      "description": "Calculates brand adherence score against active Brand Profile colors, fonts, and tone rules.",
+      "access": "Cloud Protected"
+    },
+    {
+      "name": "audit_channel_compliance",
+      "description": "Checks aspect ratio boundaries, subtitle safe-zones, and platform character limits.",
+      "access": "Cloud Protected"
+    },
+    {
+      "name": "score_content_quality",
+      "description": "Evaluates overall B2B conversion potential, compliance risk, and outputs a 0-100 QA score.",
+      "access": "Cloud Protected"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "RenWorkBrandProfile",
+  "type": "object",
+  "required": [
+    "profile_id",
+    "company_id",
+    "version",
+    "brand_name",
+    "tagline",
+    "industry",
+    "colors",
+    "typography"
+  ],
+  "properties": {
+    "profile_id": { "type": "string" },
+    "company_id": { "type": "string" },
+    "version": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$" },
+    "brand_name": { "type": "string" },
+    "brand_name_en": { "type": "string" },
+    "tagline": { "type": "string" },
+    "tagline_en": { "type": "string" },
+    "industry": { "type": "string" },
+    "target_markets": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "colors": {
+      "type": "object",
+      "required": ["primary", "bg_dark", "text_primary"],
+      "properties": {
+        "primary": { "type": "string", "pattern": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$" },
+        "primary_light": { "type": "string", "pattern": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$" },
+        "primary_dark": { "type": "string", "pattern": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$" },
+        "secondary": { "type": "string", "pattern": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$" },
+        "accent": { "type": "string", "pattern": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$" },
+        "bg_dark": { "type": "string", "pattern": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$" },
+        "bg_light": { "type": "string", "pattern": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$" },
+        "card_dark": { "type": "string", "pattern": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$" },
+        "text_primary": { "type": "string", "pattern": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$" },
+        "text_secondary": { "type": "string", "pattern": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$" },
+        "border_subtle": { "type": "string" }
+      },
+      "additionalProperties": { "type": "string" }
+    },
+    "typography": {
+      "type": "object",
+      "required": ["font_sans"],
+      "properties": {
+        "font_sans": { "type": "string" },
+        "font_display": { "type": "string" },
+        "font_mono": { "type": "string" }
+      }
+    },
+    "logos": {
+      "type": "object",
+      "properties": {
+        "primary_svg": { "type": "string" },
+        "monochrome_svg": { "type": "string" },
+        "reversed_svg": { "type": "string" },
+        "safe_zone_ratio": { "type": "number", "minimum": 0.1, "maximum": 0.5 }
+      }
+    },
+    "voice_tone": {
+      "type": "object",
+      "properties": {
+        "primary_archetype": { "type": "string" },
+        "tone_keywords": { "type": "array", "items": { "type": "string" } },
+        "prohibited_expressions": { "type": "array", "items": { "type": "string" } },
+        "preferred_terms": { "type": "object", "additionalProperties": { "type": "string" } }
+      }
+    },
+    "compliance_profile": {
+      "type": "object",
+      "properties": {
+        "mandatory_disclaimers": { "type": "array", "items": { "type": "string" } },
+        "trademark_notice": { "type": "string" },
+        "restricted_claims": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  }
+}
