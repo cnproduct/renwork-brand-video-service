@@ -1,0 +1,77 @@
+{
+  "brand": "心同书院",
+  "brand_en": "Xintong Academy",
+  "industry": "education_culture",
+  "industry_profile": "education",
+  "version": "1.0.0",
+  "logo_source": "心同书院logo.png (1787x685, 白底)",
+  "color": {
+    "primary": { "value": "#9A2626", "name": "书院朱红", "usage": "主色：标题、Logo、主按钮、强调" },
+    "primary_dark": { "value": "#7A1E1E", "name": "深朱红", "usage": "渐变、悬停、按下状态" },
+    "primary_light": { "value": "#C0554A", "name": "浅朱红", "usage": "浅色背景上的强调" },
+    "accent_gold": { "value": "#C9A227", "name": "暖金", "usage": "装饰线、点缀（禁用于正文文字，对比度 2.35:1）" },
+    "ink": { "value": "#1A1A1A", "name": "墨", "usage": "正文、深色文字" },
+    "ink_soft": { "value": "#4A4A4A", "name": "淡墨", "usage": "次要文字" },
+    "paper": { "value": "#FFFBF5", "name": "米白纸", "usage": "浅色背景（主）" },
+    "paper_warm": { "value": "#F7F0E6", "name": "宣纸", "usage": "浅色背景（暖）、卡片底" },
+    "white": { "value": "#FFFFFF", "name": "纯白", "usage": "Logo 底色、对比背景" },
+    "neutral_dark": { "value": "#2B2B2B", "name": "深灰", "usage": "页脚、辅助图形" },
+    "neutral_mid": { "value": "#6B6B6B", "name": "中灰", "usage": "次要信息、占位" },
+    "neutral_light": { "value": "#E8E2D8", "name": "浅灰暖", "usage": "分隔线、描边" }
+  },
+  "typography": {
+    "heading": { "family": "'Songti SC','STSong','SimSun',serif", "weight": 700, "type": "serif", "note": "宋体：标题/大标题，体现国学典雅" },
+    "body": { "family": "'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif", "weight": 400, "min_size_px": 16, "note": "黑体：正文，保证可读性（教育行业 16px 最低）" },
+    "display": { "family": "'Songti SC','STSong',serif", "weight": 700, "note": "展示级：海报主视觉" },
+    "sizes": { "display": 64, "h1": 40, "h2": 30, "h3": 22, "body": 16, "caption": 13 }
+  },
+  "spacing": { "base": 4, "scale": [4, 8, 12, 16, 24, 32, 48, 64, 96] },
+  "radius": { "sm": 4, "md": 8, "lg": 16, "full": 9999 },
+  "stroke": { "hairline": 1, "regular": 2, "bold": 4 },
+  "logo": {
+    "clear_space": "等于 Logo 中『书』字宽度的 1.5 倍",
+    "min_width_px": 120,
+    "variants": ["彩色（朱红）", "单色墨", "反白（米白底朱红）"],
+    "do_not": ["拉伸变形", "改色", "置于复杂图案上无保护", "与文字过近"]
+  },
+  "voice": {
+    "archetype": "Sage（智慧传承者）+ Caregiver（公益守护者）",
+    "dimensions": { "sincerity": 0.9, "competence": 0.85, "excitement": 0.4, "sophistication": 0.7, "rurality": 0.2 },
+    "formality": 0.55,
+    "tone_keywords": ["温暖", "克制", "庄重", "笃行", "公心", "传承"],
+    "prohibited": ["收费晋级", "卖导师身份", "课内推销", "加盟费", "绝对化用语", "神化个人"],
+    "slogan": "此心相同，世界大同",
+    "mission": "启世人公心，化世界大同"
+  },
+  "imagery": {
+    "photography": { "style": "真实纪实，人文纪实", "lighting": "自然光、暖光", "color_treatment": "暖调、低饱和、胶片感", "composition": "人物为主体，中景/近景，留白", "subject": "书院课堂、讲学、共修、公益活动、自然" },
+    "illustration": { "style": "水墨/线描/剪纸风", "palette_adherence": "严格（朱红/墨/纸色）", "note": "用于节日贺卡、文化海报" },
+    "icons": { "style": "线稿，1.5px 描边", "grid": "24x24", "corner_radius": 2 }
+  },
+  "motion": {
+    "energy": "克制、庄重、行云流水",
+    "easing": { "standard": "cubic-bezier(0.4,0,0.2,1)", "decelerate": "cubic-bezier(0,0,0.2,1)", "spring": "cubic-bezier(0.68,-0.55,0.265,1.55)" },
+    "duration": { "micro": 150, "short": 250, "standard": 400, "long": 700, "expressive": 1200 },
+    "principles": [
+      "行云流水：动效如墨入水，缓慢自然，无突兀",
+      "以静制动：大面积静止，小面积微动，突出庄重",
+      "仪式感入场：标题以 0.6-0.8s 缓入，带轻微上浮",
+      "不炫技：禁止弹跳、闪动、高速旋转"
+    ],
+    "video": { "transition": "溶解/缓推为主，时长 0.4-0.6s", "ken_burns": "推拉幅度 4-8%，速度平缓" }
+  },
+  "accessibility": {
+    "level": "AA+",
+    "min_contrast": 4.5,
+    "min_body_font_px": 16,
+    "verified": {
+      "朱红底/白字": "7.84:1 AAA",
+      "朱红底/米白字": "7.60:1 AAA",
+      "墨字/米白底": "16.88:1 AAA",
+      "墨字/宣纸底": "15.38:1 AAA",
+      "朱红/宣纸": "6.93:1 AA",
+      "暖金/米白": "2.35:1（仅装饰，禁文字）"
+    }
+  },
+  "applications": ["书院门头", "课程海报", "公众号/官网", "视频片头", "公益证书", "文化节物料", "文创产品", "办公物料"]
+}

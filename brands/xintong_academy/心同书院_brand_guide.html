@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>心同书院 · 品牌视觉系统指南</title>
+<style>
+  :root {
+    --red: #9A2626; --red-dark: #7A1E1E; --red-light: #C0554A;
+    --gold: #C9A227; --ink: #1A1A1A; --ink-soft: #4A4A4A;
+    --paper: #FFFBF5; --paper-warm: #F7F0E6; --line: #E8E2D8;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif; background: var(--paper); color: var(--ink); line-height: 1.7; }
+  .wrap { max-width: 1000px; margin: 0 auto; padding: 0 32px 80px; }
+  header.hero { background: linear-gradient(160deg, var(--red) 0%, var(--red-dark) 100%); color: #fff; padding: 80px 32px 64px; text-align: center; }
+  header.hero .seal { width: 84px; height: 84px; border-radius: 50%; border: 3px solid var(--gold); display: grid; place-items: center; margin: 0 auto 20px; font-size: 40px; font-family: 'Songti SC',serif; }
+  header.hero h1 { font-family: 'Songti SC','STSong',serif; font-size: 44px; letter-spacing: 6px; }
+  header.hero p { color: rgba(255,255,255,.85); margin-top: 12px; letter-spacing: 3px; font-size: 15px; }
+  section { margin-top: 56px; }
+  h2 { font-family: 'Songti SC',serif; font-size: 30px; color: var(--red); border-left: 6px solid var(--gold); padding-left: 14px; margin-bottom: 22px; }
+  h3 { font-size: 18px; margin: 20px 0 10px; color: var(--ink); }
+  p, li { font-size: 15px; color: var(--ink-soft); }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-top: 16px; }
+  .card { background: var(--paper-warm); border: 1px solid var(--line); border-radius: 12px; padding: 18px; }
+  .swatch { border-radius: 10px; height: 84px; margin-bottom: 10px; border: 1px solid var(--line); }
+  .swatch .hex { font-size: 12px; padding: 6px 10px; background: rgba(255,255,255,.85); border-radius: 6px; display: inline-block; margin: 8px; font-weight: 600; }
+  .token-name { font-weight: 600; font-size: 14px; }
+  .token-usage { font-size: 13px; color: var(--ink-soft); margin-top: 4px; }
+  table { width: 100%; border-collapse: collapse; margin-top: 16px; font-size: 14px; }
+  th, td { border: 1px solid var(--line); padding: 10px 12px; text-align: left; }
+  th { background: var(--paper-warm); font-weight: 600; }
+  .type-display { font-family: 'Songti SC','STSong',serif; font-size: 40px; font-weight: 700; }
+  .type-h1 { font-family: 'Songti SC',serif; font-size: 30px; font-weight: 700; }
+  .type-body { font-size: 16px; }
+  .logo-box { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 40px; display: flex; align-items: center; justify-content: center; }
+  .logo-box img { max-width: 100%; height: auto; max-height: 180px; }
+  .badge { display: inline-block; background: var(--red); color: #fff; border-radius: 999px; padding: 3px 12px; font-size: 12px; margin-right: 6px; }
+  .badge.gold { background: var(--gold); color: var(--ink); }
+  .badge.ink { background: var(--ink); }
+  .dos-donts { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 16px; }
+  .dos { background: #F2F7F2; border: 1px solid #CFE3CF; border-radius: 12px; padding: 18px; }
+  .donts { background: #FBF1F1; border: 1px solid #EFD3D3; border-radius: 12px; padding: 18px; }
+  .dos h3 { color: #2E6B2E; } .donts h3 { color: var(--red); }
+  .motion-card { background: var(--paper-warm); border-radius: 12px; padding: 16px; margin-top: 12px; border: 1px solid var(--line); }
+  code { background: var(--paper-warm); border: 1px solid var(--line); padding: 2px 6px; border-radius: 4px; font-size: 13px; }
+  footer { margin-top: 64px; text-align: center; color: var(--ink-soft); font-size: 13px; border-top: 1px solid var(--line); padding-top: 24px; }
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="seal">书</div>
+  <h1>心同书院</h1>
+  <p>此心相同，世界大同 · 品牌视觉系统指南 v1.0</p>
+</header>
+<div class="wrap">
+
+  <section>
+    <h2>一、品牌概述</h2>
+    <p><strong>心同书院</strong> —— 由热爱中国传统文化的爱心人士共同发起的<strong>纯公益讲学</strong>组织，以「启世人公心，化世界大同」为使命，致力于家庭和谐、身心健康、企业发展。</p>
+    <div class="grid">
+      <div class="card"><h3>品牌人格</h3><p>Sage（智慧传承者）× Caregiver（公益守护者）——庄重而不疏离，温暖而不煽情。</p></div>
+      <div class="card"><h3>视觉定位</h3><p>国学典雅 · 克制留白 · 纸墨朱红。以宋体为骨、宣纸为底、朱红点睛。</p></div>
+      <div class="card"><h3>口号</h3><p>此心相同，世界大同</p></div>
+      <div class="card"><h3>价值观</h3><p>人人有道，人人有德，互敬互爱，互帮互助，天下为公</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>二、Logo 系统</h2>
+    <div class="logo-box"><img src="https://raw.githubusercontent.com/cnproduct/renwork-brand-video-service/main/assets/xintong-academy/logo.png" alt="心同书院 Logo" onerror="this.style.display='none';document.getElementById('logoFallback').style.display='block'"><div id="logoFallback" style="display:none;font-size:13px;color:#999">（本地预览：assets/xintong-academy/logo.png）</div></div>
+    <p style="margin-top:12px">原 Logo：白底横向（1787×685），朱红图形 + 墨色文字。品牌系统派生：</p>
+    <div style="margin-top:10px">
+      <span class="badge">彩色 · 朱红</span><span class="badge gold">单色 · 墨</span><span class="badge ink">反白 · 米白底朱红</span>
+    </div>
+    <table>
+      <tr><th>规则</th><th>说明</th></tr>
+      <tr><td>安全区</td><td>Logo 四周留白 ≥「书」字宽的 1.5 倍</td></tr>
+      <tr><td>最小尺寸</td><td>≥ 120px 宽（数字端可至 60px 用简化标）</td></tr>
+      <tr><td>禁止</td><td>拉伸变形 / 改色 / 置于复杂图案无保护 / 与文字过近 / 深底直接用原白底版本</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>三、色彩系统</h2>
+    <p>主色朱红取自 Logo，墨与纸白构成国学基调，暖金仅作装饰点缀。</p>
+    <div class="grid">
+      <div class="card"><div class="swatch" style="background:#9A2626"><span class="hex" style="background:rgba(255,255,255,.9)">#9A2626</span></div><div class="token-name">书院朱红 · Primary</div><div class="token-usage">标题 / Logo / 主按钮 / 强调</div></div>
+      <div class="card"><div class="swatch" style="background:#7A1E1E"><span class="hex" style="background:rgba(255,255,255,.9)">#7A1E1E</span></div><div class="token-name">深朱红 · Primary Dark</div><div class="token-usage">渐变 / 悬停 / 按下</div></div>
+      <div class="card"><div class="swatch" style="background:#C9A227"><span class="hex" style="background:rgba(255,255,255,.9)">#C9A227</span></div><div class="token-name">暖金 · Accent</div><div class="token-usage">装饰线 / 点缀（禁正文）</div></div>
+      <div class="card"><div class="swatch" style="background:#1A1A1A"><span class="hex" style="background:rgba(255,255,255,.9)">#1A1A1A</span></div><div class="token-name">墨 · Ink</div><div class="token-usage">正文 / 深色文字</div></div>
+      <div class="card"><div class="swatch" style="background:#FFFBF5;border:1px solid #E8E2D8"><span class="hex" style="background:#fff">#FFFBF5</span></div><div class="token-name">米白纸 · Paper</div><div class="token-usage">浅底（主）</div></div>
+      <div class="card"><div class="swatch" style="background:#F7F0E6;border:1px solid #E8E2D8"><span class="hex" style="background:#fff">#F7F0E6</span></div><div class="token-name">宣纸 · Paper Warm</div><div class="token-usage">卡片底 / 暖背景</div></div>
+    </div>
+    <h3>使用比例建议</h3>
+    <p>朱红 ≤ 30% · 墨/文字 ≥ 40% · 纸白底 ≥ 30% · 暖金 ≤ 5%（仅装饰）。</p>
+    <h3>对比度（WCAG）</h3>
+    <table>
+      <tr><th>组合</th><th>对比度</th><th>级别</th><th>用途</th></tr>
+      <tr><td>朱红 #9A2626 / 白 #FFFFFF</td><td>7.84:1</td><td>AAA</td><td>红底白字标题</td></tr>
+      <tr><td>朱红 #9A2626 / 米白 #FFFBF5</td><td>7.60:1</td><td>AAA</td><td>红底米白字</td></tr>
+      <tr><td>墨 #1A1A1A / 米白 #FFFBF5</td><td>16.88:1</td><td>AAA</td><td>正文</td></tr>
+      <tr><td>朱红 #9A2626 / 宣纸 #F7F0E6</td><td>6.93:1</td><td>AA</td><td>卡片文字</td></tr>
+      <tr><td>暖金 #C9A227 / 米白</td><td>2.35:1</td><td>—</td><td>仅装饰，禁正文</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>四、字体系统</h2>
+    <div class="grid">
+      <div class="card"><h3>标题 · 宋体</h3><p class="type-display">此心相同 世界大同</p><p style="margin-top:8px"><code>Songti SC / STSong / SimSun · 700</code></p></div>
+      <div class="card"><h3>正文 · 黑体</h3><p class="type-body">启世人公心，化世界大同。纯公益讲学，滋润精神家园。</p><p style="margin-top:8px"><code>PingFang SC / Microsoft YaHei · 400 · 16px 起</code></p></div>
+    </div>
+    <table style="margin-top:16px">
+      <tr><th>层级</th><th>字号</th><th>字重</th><th>用途</th></tr>
+      <tr><td>Display</td><td>64px</td><td>700</td><td>海报主视觉</td></tr>
+      <tr><td>H1</td><td>40px</td><td>700</td><td>页面标题</td></tr>
+      <tr><td>H2</td><td>30px</td><td>700</td><td>章节标题</td></tr>
+      <tr><td>H3</td><td>22px</td><td>600</td><td>卡片标题</td></tr>
+      <tr><td>Body</td><td>16px</td><td>400</td><td>正文（≥16px）</td></tr>
+      <tr><td>Caption</td><td>13px</td><td>400</td><td>辅助说明</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>五、品牌语调（Brand Voice）</h2>
+    <table>
+      <tr><th>维度</th><th>我们这样说</th><th>我们不这样说</th></tr>
+      <tr><td>温度</td><td>「一起，从一部经典开始」</td><td>「超值课程速抢」</td></tr>
+      <tr><td>身份</td><td>「纯公益讲学，以经典滋养人心」</td><td>「会员尊享，付费晋级」</td></tr>
+      <tr><td>庄重</td><td>「大道之行，天下为公」</td><td>「业界第一，绝对有效」</td></tr>
+      <tr><td>行动</td><td>「欢迎加入心同书院，共筑精神家园」</td><td>「限时优惠，抓紧报名」</td></tr>
+    </table>
+    <h3>红线词汇</h3>
+    <p><span class="badge">收费晋级</span><span class="badge">卖导师身份</span><span class="badge">课内推销</span><span class="badge">加盟费</span><span class="badge">绝对化用语</span><span class="badge">神化个人</span></p>
+  </section>
+
+  <section>
+    <h2>六、图像方向（Brand Imagery）</h2>
+    <div class="grid">
+      <div class="card"><h3>摄影</h3><p>真实人文纪实：书院课堂、讲学、共修、公益活动。自然暖光，低饱和，近景人物，留白构图。</p></div>
+      <div class="card"><h3>插画</h3><p>水墨 / 线描 / 剪纸风，严格用朱红/墨/纸色。用于节日贺卡、文化海报。</p></div>
+      <div class="card"><h3>图标</h3><p>线稿 1.5px，24×24 网格，圆角 2px。线条克制，无过度装饰。</p></div>
+    </div>
+    <h3>AI 生图提示词模板</h3>
+    <p style="background:var(--paper-warm);border:1px solid var(--line);border-radius:10px;padding:14px;font-size:14px"><code>"人文纪实摄影，[主题：书院课堂/公益讲座/师生共修]，自然暖光，低饱和暖色调，中景近景，主体人物，大量留白，胶片质感，品牌色：朱红 #9A2626、墨 #1A1A1A、宣纸 #F7F0E6"</code></p>
+  </section>
+
+  <section>
+    <h2>七、动效规范（Brand Motion）</h2>
+    <div class="motion-card"><strong>原则一 · 行云流水</strong><p>动效如墨入水，缓慢自然，无突兀弹跳。</p></div>
+    <div class="motion-card"><strong>原则二 · 以静制动</strong><p>大面积静止，小面积微动，突出庄重。</p></div>
+    <div class="motion-card"><strong>原则三 · 仪式感入场</strong><p>标题 0.6-0.8s 缓入，轻微上浮（translateY 12-20px → 0）。</p></div>
+    <table style="margin-top:16px">
+      <tr><th>时长档</th><th>值</th><th>缓动</th><th>用途</th></tr>
+      <tr><td>Micro</td><td>150ms</td><td>standard</td><td>按钮反馈</td></tr>
+      <tr><td>Standard</td><td>400ms</td><td>decelerate</td><td>页面转场</td></tr>
+      <tr><td>Expressive</td><td>1200ms</td><td>spring</td><td>Logo 展示、仪式感入场</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>八、应用场景</h2>
+    <div class="grid">
+      <div class="card"><h3>书院门头</h3><p>米白底 + 朱红招牌 + 墨字，宋体大标题。</p></div>
+      <div class="card"><h3>课程海报</h3><p>宣纸底 + 朱红题名 + 暖金细线分隔。</p></div>
+      <div class="card"><h3>公众号/官网</h3><p>米白底、墨字正文、朱红 CTA。</p></div>
+      <div class="card"><h3>视频片头</h3><p>朱红渐变 + 宋体标题 + 暖金 Logo 线稿。</p></div>
+      <div class="card"><h3>公益证书</h3><p>纸白底 + 朱红印章 + 金色边线。</p></div>
+      <div class="card"><h3>文创产品</h3><p>朱红/墨/宣纸三色，传统纹样点缀。</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>九、正确与错误用法</h2>
+    <div class="dos-donts">
+      <div class="dos"><h3>✓ 应该</h3><ul style="margin-left:18px"><li>朱红用于强调，墨用于正文</li><li>深底用反白 Logo，浅底用彩色 Logo</li><li>标题用宋体，正文用黑体且 ≥16px</li><li>暖金仅作装饰线与点缀</li></ul></div>
+      <div class="donts"><h3>✗ 禁止</h3><ul style="margin-left:18px"><li>Logo 拉伸变形或改色</li><li>暖金作正文文字（对比度不足）</li><li>正文用宋体小字（可读性差）</li><li>公益场景出现报价、成交、拉客户</li></ul></div>
+    </div>
+  </section>
+
+  <footer>
+    © 心同书院 · 品牌视觉系统 v1.0 · 由 BrandVision 引擎生成<br>
+    令牌源文件：design-tokens.json · 品牌档案：brand-profile.json
+  </footer>
+</div>
+</body>
+</html>

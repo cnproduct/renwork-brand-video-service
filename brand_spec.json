@@ -1,0 +1,32 @@
+{
+  "workspace_brands": [
+    {
+      "company_id": "xintong_academy",
+      "brand_name": "心同书院",
+      "brand_name_en": "Xintong Academy",
+      "brand_type": "academy_public_welfare",
+      "profile_path": "brands/xintong_academy/brand-profile.json",
+      "design_tokens_path": "brands/xintong_academy/design-tokens.json",
+      "brand_guide_path": "brands/xintong_academy/心同书院_brand_guide.html",
+      "consistency_report_path": "brands/xintong_academy/consistency-report.md",
+      "related_brand": {
+        "company_id": "xintong_gongsheng",
+        "relationship": "定慧一体，隔离而协同（心同书院=公益/非营利·守公心；心同共生=社会企业·造妙用）"
+      }
+    },
+    {
+      "company_id": "xintong_gongsheng",
+      "brand_name": "心同共生",
+      "brand_name_en": "Xintong Gongsheng",
+      "brand_type": "social_enterprise",
+      "profile_path": "brands/xintong_gongsheng/brand-profile.json",
+      "product_truth_path": "brands/xintong_gongsheng/product-truth.json",
+      "assets_registry_path": "brands/xintong_gongsheng/assets-registry.json",
+      "active_campaign": "cmp_xintong_festival_2026",
+      "related_brand": {
+        "company_id": "xintong_academy",
+        "relationship": "定慧一体，隔离而协同（心同共生=社会企业·造妙用；心同书院=公益/非营利·守公心）"
+      }
+    }
+  ]
+}

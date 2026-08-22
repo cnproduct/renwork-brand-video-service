@@ -1,0 +1,50 @@
+{
+  "profile_id": "bp_xintong_academy_2026",
+  "company_id": "xintong_academy",
+  "version": "1.0.0",
+  "brand_name": "心同书院",
+  "brand_name_en": "Xintong Academy",
+  "tagline": "此心相同，世界大同",
+  "tagline_en": "One Heart, One World in Great Harmony",
+  "industry": "education_culture",
+  "target_markets": ["公众与家庭", "青少年", "公益志愿者", "公益讲师", "传统文化爱好者"],
+  "colors": {
+    "primary": "#9A2626",
+    "primary_light": "#C0554A",
+    "primary_dark": "#7A1E1E",
+    "secondary": "#C9A227",
+    "accent": "#C9A227",
+    "bg_dark": "#1A1A1A",
+    "bg_light": "#FFFBF5",
+    "card_dark": "#2B2B2B",
+    "text_primary": "#1A1A1A",
+    "text_secondary": "#4A4A4A",
+    "contrast_notes": "朱红底/白字 7.84:1 AAA；暖金 #C9A227 仅作装饰（2.35:1），禁用于正文。"
+  },
+  "typography": {
+    "font_sans": "'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif",
+    "font_display": "'Songti SC', 'STSong', 'SimSun', serif",
+    "font_mono": "'PingFang SC', monospace"
+  },
+  "logos": {
+    "primary_png": "assets/xintong-academy/logo.png",
+    "note": "原 Logo 为白底 RGB（1787x685）；建议品牌方提供透明底版本，并据本系统生成单色/反白变体。",
+    "safe_zone_ratio": 0.2
+  },
+  "voice_tone": {
+    "primary_archetype": "Sage + Caregiver（智慧传承者 × 公益守护者）",
+    "tone_keywords": ["温暖", "克制", "庄重", "笃行", "公心", "传承"],
+    "prohibited_expressions": ["收费晋级", "卖导师身份", "课内推销", "加盟费", "借公益名义强制成交", "绝对化用语（最/第一/唯一）", "神化个人"],
+    "preferred_terms": {
+      "使命": "启世人公心，化世界大同",
+      "口号": "此心相同，世界大同",
+      "性质": "纯公益讲学",
+      "价值观": "人人有道，人人有德，互敬互爱，互帮互助，天下为公"
+    }
+  },
+  "compliance_profile": {
+    "mandatory_disclaimers": ["心同书院为纯公益讲学组织，不以收费晋级或商业成交为目的。"],
+    "trademark_notice": "© 心同书院",
+    "restricted_claims": ["未经证实不得宣传课程人数/效果数据", "不得宣称与任何权威机构合作为达成", "公益场景禁出现报价、成交、拉客户"]
+  }
+}
