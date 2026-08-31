@@ -7,6 +7,12 @@ description: "RenWork 品牌视觉与企业级短视频/宣传片全自动生产
 
 本技能专为 **人人易智能科技有限公司（rrenn.com）旗下 RenWork 外贸增长操作系统** 定制，将 **RenWork 官方品牌视觉 DNA**、**Video-Shotcraft 镜头动效语法库** 与 **ChatCut 智能音视频装配管线** 深度融合，支持在任何会话中一键调度生成电影级 1080P/4K 品牌宣传片、实战营高能混剪与出海获客短视频。
 
+## 生产路由：多场景培训视频
+
+当请求需要逐个生成培训、咨询、客户服务、展会、直播或产品演示场景，并且还要支持额度中断后续跑、独立场景验收、封面/渠道文案追踪或最终音画同步返工时，先调用 [`renwork-training-scene-videos`](../renwork-training-scene-videos/SKILL.md)。由该技能维护 `video-production-manifest.json`，再把已接受的场景和时间映射交给本技能的 Shotcraft/ChatCut 装配能力。
+
+普通的一次性品牌片、已有素材的确定性渲染和单片 Shotcraft 动效仍由本技能直接处理。不得把“场景文件已生成”当成“最终成片已验收”；发布前必须通过画面—字幕—声音同步、无意外重复镜头、品牌一致性、封面实际应用和人工完整播放闸门。
+
 ---
 
 ## 🎨 第一部分：RenWork 品牌视觉系统规范 (Brand Visual DNA)

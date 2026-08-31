@@ -2,7 +2,7 @@
 
 心同共生（心同书院 × 心同共生）品牌视觉系统与视频生产的统一服务：以 **skills（剧本）+ plugin（工具）+ MCP（品牌 Token）+ pipeline（渲染管线）** 四层打包，覆盖「品牌建档 → 产品事实库 → 战役策划 → 渠道内容 → 视频生成 → 封面/配音/配色」全链路。
 
-> 版本 v1.0.0 · 面向 RenWork / OpenCode 生态
+> 版本 v1.1.0 · 面向 RenWork / OpenCode 生态
 
 ---
 
@@ -10,11 +10,11 @@
 
 | 层 | 目录 | 职责 |
 | :--- | :--- | :--- |
-| **Skills（剧本）** | `skills/` | 22 个技能包，定义品牌建档、内容生产、视频导演等可复用工作流 |
+| **Skills（剧本）** | `skills/` | 23 个技能包，覆盖品牌建档、内容生产、视频导演与逐场景培训视频生产 |
 | **Plugin（工具）** | `plugin.ts` | OpenCode 插件，暴露 4 个工具：TTS 合成、品牌配色提取、视频生成、加封面 |
 | **MCP（品牌 Token）** | `mcp/` | 本地品牌 Token 解析服务 + 云端网关规格 |
 | **Pipeline（渲染管线）** | `pipeline/` | Node + Python + FFmpeg 视频生成脚本 |
-| **Schemas / Templates** | `schemas/` `templates/` | 6 大 JSON Schema + 5 大类内容模板 |
+| **Schemas / Templates** | `schemas/` `templates/` | 7 大 JSON Schema + 5 大类内容模板 |
 | **品牌数据** | `brands/` | 心同共生品牌档案、产品事实库、战役规划 |
 | **素材** | `pipeline/assets/` | 真实场景图 |
 
@@ -38,6 +38,7 @@ renwork-brand-video-service/
 │   ├── short-video-director/        # 短视频导演
 │   ├── locale-market-adapter/       # 多国本地化
 │   ├── content-brand-auditor/       # 四道合规审计
+│   ├── renwork-training-scene-videos/ # 逐场景生成、断点续跑与资产验收
 │   ├── xintong-brand-video/         # ★ 统一视频生成（本服务入口）
 │   └── ...（brand-voice / brandkit / svg-logo-designer 等）
 ├── mcp/
@@ -49,7 +50,7 @@ renwork-brand-video-service/
 │       ├── config.js                # 全局配置（含 TTS 默认云扬配音）
 │       ├── lib/                     # 渲染器 / TTS / 爬虫
 │       └── agents/                  # 10 个生成器脚本
-├── schemas/                          # 6 大 JSON Schema
+├── schemas/                          # 7 大 JSON Schema（含视频生产 Manifest）
 ├── templates/                        # 5 大类内容模板
 ├── brands/xintong_gongsheng/        # 品牌档案数据
 └── pipeline/assets/xintong-scenes/  # 12 张真实场景图
@@ -118,6 +119,46 @@ RENWORK_TTS_PROVIDER=say node pipeline/src/agents/09-xintong-intro.js
 
 ```bash
 node pipeline/src/agents/10-add-cover.js
+```
+
+### 逐场景培训视频与资产追踪
+
+多场景培训、咨询、客户服务、展会或直播视频使用 `renwork-training-scene-videos`。它把每个场景作为可独立生成和验收的资产，并明确区分 `generated`、`technically_verified`、`needs_revision` 与 `accepted`，适合 Seedance 等单轮生成受限或随时可能中断的流程。
+
+初始化项目清单：
+
+```bash
+npm run training:manifest -- init \
+  --root /absolute/project/path \
+  --project-id renwork-training-camp \
+  --brand-profile-id renwork \
+  --scene '1:training_classroom:全员实操培训' \
+  --scene '2:consulting_diagnosis:1对1增长诊断'
+```
+
+每轮生成或移动文件后重新扫描，并检查结构状态：
+
+```bash
+npm run training:manifest -- scan \
+  --manifest /absolute/project/path/video-production-manifest.json
+npm run training:manifest -- validate \
+  --manifest /absolute/project/path/video-production-manifest.json
+```
+
+最终交付必须通过七项发布闸门，包括技术播放、场景内容匹配、画面—字幕—声音同步、无意外重复镜头、品牌一致性、封面实际应用和人工完整播放：
+
+```bash
+npm run training:manifest -- validate \
+  --manifest /absolute/project/path/video-production-manifest.json \
+  --release-ready
+```
+
+Manifest 数据结构见 `schemas/video-production-manifest.schema.json`。完整工作流、续跑规则和命名规范位于 `skills/renwork-training-scene-videos/`。
+
+### 验证逐场景工作流
+
+```bash
+npm run verify
 ```
 
 ### 通过插件工具调用（在 RenWork/OpenCode 会话中）

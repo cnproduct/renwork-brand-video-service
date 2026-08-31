@@ -1,0 +1,4 @@
+interface:
+  display_name: "RenWork Training Scene Videos"
+  short_description: "逐场景生成、合成、验收并追踪 RenWork 培训视频资产"
+  default_prompt: "Use $renwork-training-scene-videos to turn this RenWork training brief into resumable scene videos, a tracked composite, and an acceptance-ready final package."
