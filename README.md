@@ -2,7 +2,7 @@
 
 心同共生（心同书院 × 心同共生）品牌视觉系统与视频生产的统一服务：以 **skills（剧本）+ plugin（工具）+ MCP（品牌 Token）+ pipeline（渲染管线）** 四层打包，覆盖「品牌建档 → 产品事实库 → 战役策划 → 渠道内容 → 视频生成 → 封面/配音/配色」全链路。
 
-> 版本 v1.1.0 · 面向 RenWork / OpenCode 生态
+> 版本 v1.2.0 · 面向 RenWork / OpenCode 生态
 
 ---
 
@@ -10,7 +10,7 @@
 
 | 层 | 目录 | 职责 |
 | :--- | :--- | :--- |
-| **Skills（剧本）** | `skills/` | 23 个技能包，覆盖品牌建档、内容生产、视频导演与逐场景培训视频生产 |
+| **Skills（剧本）** | `skills/` | 25 个技能包，覆盖品牌建档、内容生产、视频导演、逐场景培训视频与审核式知识沉淀 |
 | **Plugin（工具）** | `plugin.ts` | OpenCode 插件，暴露 4 个工具：TTS 合成、品牌配色提取、视频生成、加封面 |
 | **MCP（品牌 Token）** | `mcp/` | 本地品牌 Token 解析服务 + 云端网关规格 |
 | **Pipeline（渲染管线）** | `pipeline/` | Node + Python + FFmpeg 视频生成脚本 |
@@ -39,6 +39,7 @@ renwork-brand-video-service/
 │   ├── locale-market-adapter/       # 多国本地化
 │   ├── content-brand-auditor/       # 四道合规审计
 │   ├── renwork-training-scene-videos/ # 逐场景生成、断点续跑与资产验收
+│   ├── renwork-video-production-knowledge-base/ # 视频经验暂存、审核与复用
 │   ├── xintong-brand-video/         # ★ 统一视频生成（本服务入口）
 │   └── ...（brand-voice / brandkit / svg-logo-designer 等）
 ├── mcp/
@@ -160,6 +161,22 @@ Manifest 数据结构见 `schemas/video-production-manifest.schema.json`。完�
 ```bash
 npm run verify
 ```
+
+### 审核式视频知识库
+
+`renwork-video-production-knowledge-base` 把素材观察、字幕修正、经证据支持的主张、剪辑故障与用户已接受成片中的可复用模式分开管理。初始化时锁定租户与品牌档案；新记录先进入 `staging/`，只有显式审核后才追加到 `approved/`。
+
+```bash
+npm run video:kb -- init \
+  --kb-root /absolute/project/knowledge-base \
+  --tenant-id tenant-acme \
+  --brand-profile-id acme-brand
+
+npm run video:kb -- validate \
+  --kb-root /absolute/project/knowledge-base
+```
+
+逐场景 Manifest 中的 `accepted` 与七项验收证据可以支持暂存一个 `success_pattern`，但不会自动批准知识，也不会自动修改生产模板。RenAsset 到 RenWork 的保留项、转换项和不迁移项见该技能的 `references/renasset-to-renwork-delta.md`。
 
 ### 通过插件工具调用（在 RenWork/OpenCode 会话中）
 

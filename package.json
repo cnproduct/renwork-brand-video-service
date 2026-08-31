@@ -1,6 +1,6 @@
 {
   "name": "renwork-brand-video-service",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "心同共生品牌视觉系统与视频生成统一服务（skills + plugin + MCP + pipeline）",
   "type": "module",
   "private": true,
@@ -9,8 +9,10 @@
     "cover": "node pipeline/src/agents/10-add-cover.js",
     "film": "node pipeline/src/agents/07-brand-film.js",
     "training:manifest": "python3 skills/renwork-training-scene-videos/scripts/artifact_manifest.py",
+    "video:kb": "python3 skills/renwork-video-production-knowledge-base/scripts/renwork_video_kb.py",
     "test:training-scenes": "python3 scripts/test_training_scene_manifest.py",
-    "verify": "npm run test:training-scenes"
+    "test:video-kb": "python3 scripts/test_video_knowledge_base.py",
+    "verify": "npm run test:training-scenes && npm run test:video-kb"
   },
   "dependencies": {
     "zod": "^3.24.1"
